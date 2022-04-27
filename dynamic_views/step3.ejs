@@ -1,0 +1,37 @@
+<html>
+    <head>
+        <meta content="charset=UTF-8" name="viewport" content="width=device-width, initial-scale=0.86, maximum-scale=5.0, minimum-scale=0.86">
+        <title>Step 3</title>
+        <link rel="stylesheet" type="text/css" href="/css/index.css">
+        <link rel="stylesheet" type="text/css" href="/css/step3.css">
+    </head>
+    <body>
+        <div class="top-bar-menu-div" id="top-bar-div-step3">
+            <h4>Step 3. Previous Classes</h4>
+        </div>
+        
+        <form id="step-3">
+            <label for="cards" id="cards-label">What Classes Have You Taken?</label>
+            <div id="menu-oscillation">
+                <input type="button" onclick="oscillateMenu(this, pCourses)" id="pool-btn" value="Course Pool">
+
+                <input type="button" onclick="oscillateMenu(this, cPool)" id="your-courses-btn" value="My Courses">
+            </div>
+            <div id="main-content3-div">
+                <div class="class-cards-div">
+                    <%for (var node of nodeList) {%>
+                        <input type="button" onclick="markCourse(this)" class="card" value="<%-node.courseAbbv%> <%-node.courseId%>" id="<%-node.courseAbbv%><%-node.courseId%>" >
+                    <%}%>
+                </div>
+                <div id="your-courses-menu-div">
+                    
+                </div>
+            </div>
+           
+        </form>
+        <div class="go">
+            <input type="button"  onclick="postUpdatedData()" id="go" value="Make My Schedule">
+        </div>
+    </body>
+    <script type="text/javascript" src="/js/step3.js"></script>
+</html>

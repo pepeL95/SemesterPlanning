@@ -1,0 +1,260 @@
+#prospected-courses-div {
+    position: absolute;
+    width: 80vw;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    background: white;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border: solid 1px lightgray;
+    border-radius: 8px;
+    box-shadow: -2px -2px 5px lightgray, 
+	 			 2px  2px 5px lightgray;
+    padding: 10px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    visibility: hidden;
+}
+
+#your-courses-menu-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#your-courses-menu-content {
+    display: grid;
+    grid-template-columns: auto auto;
+    width: 100%;
+    height: 100%;
+}
+
+.course {
+    width: 90%;
+    height: 50px;
+	border: none;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: none;
+    font-weight: bolder;
+    color: #33373B;
+    cursor: pointer;
+}
+.course:hover{
+    border-bottom: solid 1px #007CAD;
+    color: #007CAD;
+}
+
+.top-bar-menu-div {  
+    width: 100vw;
+    height: 10vh;
+    position: relative;
+    
+}
+
+.left-top-bar, .center-top-bar, .right-top-bar {
+    position: absolute;
+    width: calc(100%/3);
+    height: 100%;
+    display: flex;
+    align-items: center;
+    
+}
+.left-top-bar {
+    left: 0;
+    justify-content: flex-start;
+    padding-left: 20px;
+}
+
+.center-top-bar {
+    left: 33.3%;
+    justify-content: center;
+}
+
+.right-top-bar {
+    right: 0;
+    justify-content: flex-end;
+    padding-right: 20px;
+}
+
+#prospected-courses {
+    background: none;
+    color: inherit;
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+    border: none;
+    padding: 5px;
+   
+}
+
+#prospected-courses:hover {
+    /* transform: scale(1.2); */
+    transition: 0.8s;
+    color: #009bcb;
+    border-radius: 8px;
+    box-shadow: -1px -1px 5px lightgray, 
+	 			 1px  1px 5px lightgray;
+}
+
+#results-heading {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 15vh;
+    width: 100vw;
+    min-height: 100px;
+}
+
+#results {
+    font-size: 30px;
+}
+
+#in-line-disclaimer {
+    padding-bottom: 20px;
+}
+
+#main-content-result-pg1-div {
+    width: 100vw;
+    height: 75vh;
+    min-height: 400px;
+}
+
+#main-content-result-pg2-div {
+    width: 100vw;
+    height: 110vh;
+    background: #21313C;
+}
+
+.hstack {
+    width: 100%;
+    height: 90%;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#left-arrow {
+    margin-left: calc(50% - 190px)
+}
+
+.card {
+    cursor: pointer;
+    background: #009bcb;
+    min-width: 380px;
+    height: 95%;
+    margin: 10px;
+    border: none;
+    border-radius: 20px;
+    box-shadow: -1px -1px 5px gray, 
+	 			 1px  1px 5px gray;
+    transition: 0.2s;
+    position: relative;
+}
+#course-abbv, #course-number {
+    width: 100%;
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+
+#course-abbv {
+    margin-top: calc(25%);
+    font-size: 30px;
+}
+
+#course-number {
+    font-size: 50px;
+    margin-top: 10px;
+}
+
+#tap {
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    text-decoration: none;
+    border: none;
+    color: white;
+    font-family: inherit;
+    font-weight: lighter;
+    font-size: 20px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: clip;
+}
+
+#see-more {
+    font-size: 20px;
+    text-decoration: none;
+    color: inherit;
+    min-width: 200px;
+    display: flex;
+    justify-content: center;
+    
+}
+
+#see-more:hover {
+    color: #009bcb;
+}
+
+.down-arrow-div {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+#down-arrow {
+    width: 18px;
+    height: 18px;
+    border-color: black;
+    border-width: 0px 1px 1px 0px;
+    border-style: solid;
+    animation: spring 1s infinite linear;
+    cursor: pointer;
+}
+
+
+@keyframes spring {
+        	
+    from {
+		transform:translateY(0px) rotate(45deg)
+	}
+	to {
+        transform:translateY(10px) rotate(45deg)
+	}
+}
+
+.hStack::-webkit-scrollbar {
+    display: none; 
+    -webkit-overflow-scrolling: touch;
+}
+
+.hStack {
+    -ms-overflow-style: none; 
+    scrollbar-width: none; 
+    -webkit-overflow-scrolling: touch;
+}
+
+body::-webkit-scrollbar {
+    display: none; 
+    -webkit-overflow-scrolling: touch;
+}
+
+.body {
+    -ms-overflow-style: none; 
+    scrollbar-width: none; 
+    -webkit-overflow-scrolling: touch;
+}
+
+
+

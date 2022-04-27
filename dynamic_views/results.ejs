@@ -1,0 +1,44 @@
+<html>
+    <head>
+        <meta content="charset=UTF-8" name="viewport" content="width=device-width, initial-scale=0.86, maximum-scale=5.0, minimum-scale=0.86">
+        <link rel="stylesheet" href="/css/results.css">
+        <link rel="stylesheet" type="text/css" href="/css/index.css">
+        <title>Results</title>
+    </head>
+    <body>
+        <div class="top-bar-menu-div" id="results-heading-div">
+            <div class="left-top-bar"></div>
+            <div class="center-top-bar"></div>
+            <div class="right-top-bar"><button id="prospected-courses" onclick="toggleMenu()">My List</button></div>
+        </div>
+        <div id="results-heading"><p id="results">These Courses Are Unlocked</p><p id="in-line-disclaimer">We recommend speaking to an advisor prior to reserving your schedule.</p></div>
+        <div id="main-content-result-pg1-div">
+            <div class="hStack" id="accessible-courses-div">
+                <span id="left-arrow"></span>
+                <% for (var node of nodeList) {%>
+                    <div onclick="updateQueue(this)" class="card" id="<%-node.courseAbbv%><%-node.courseId%>">
+                        <section id="course-abbv"> <%-node.courseAbbv%> </section>
+                        <section id="course-number"><%-node.courseId%></section>
+                        <section id="tap">Tap to Add to Propsected List<p id="short-description"></section>
+                    </div>
+                <%}%>
+                <a href="" id="see-more">See All</a>
+            </div>
+            <div class="down-arrow-div">
+                <span id="down-arrow" onclick="body.scrollTo({top: screen.height,behavior: 'smooth'})"></span>
+            </div>
+        </div>
+        <div id="prospected-courses-div">
+            <div id="your-courses-menu-title">
+                <p id="results">Your Courses So Far</p>
+            </div>
+            <div id="your-courses-menu-content">
+                <!-- shit will be added in the corresponding js file -->
+            </div>
+        </div>
+        <div id="main-content-result-pg2-div">
+            <!--For the graph looking visuals  -->
+        </div>
+    </body>
+    <script type="text/javascript" async src="/js/results.js" ></script>
+</html>

@@ -1,0 +1,41 @@
+<html>
+    <head>
+        <meta content="charset=UTF-8" name="viewport" content="width=device-width, initial-scale=0.86, maximum-scale=5.0, minimum-scale=0.86">
+        <title>Step 3</title>
+        <link rel="stylesheet" type="text/css" href="/Users/pepe/Desktop/Programming/SemesterPlanning/public/css/index.css">
+        <link rel="stylesheet" type="text/css" href="/Users/pepe/Desktop/Programming/SemesterPlanning/public/css/step3.css">
+    </head>
+    <body>
+        <div class="top-bar-menu-div" id="top-bar-div-step3">
+            <h4>Step 3. Previous Classes</h4>
+        </div>
+        
+        <form id="step-3">
+            <label for="cards" id="cards-label">What Classes Have You Taken?</label>
+            <div id="menu-oscillation">
+                <input type="button" onclick="oscillateMenu(this, pCourses)" id="pool-btn" value="Course Pool">
+
+                <input type="button" onclick="oscillateMenu(this, cPool)" id="your-courses-btn" value="My Courses">
+            </div>
+            <div id="main-content3-div">
+                <div class="class-cards-div">
+                    <input type="button" onclick="markCourse(this)" class="card" value="MAC2301" id="MAC2301">
+                    <input type="button" onclick="markCourse(this)" class="card" value="MAC2302" id="MAC2302">
+                    <input type="button" onclick="markCourse(this)" class="card" value="PHY2048" id="PHY2048">
+                    <input type="button" onclick="markCourse(this)" class="card" value="PHY2048L" id="PHY2048L">
+                    <input type="button" onclick="markCourse(this)" class="card" value="CDA3103" id="CDA3103">
+                    <input type="button" onclick="markCourse(this)" class="card" value="COP4530" id="COP4530">
+                    <input type="button" onclick="markCourse(this)" class="card" value="CDA3201" id="CDA3201">
+                </div>
+                <div id="your-courses-menu-div">
+                    
+                </div>
+            </div>
+           
+        </form>
+        <div class="go">
+            <a href="/Users/pepe/Desktop/Programming/SemesterPlanning/public/html/results.html" id="go">Make My Schedule</a>
+        </div>
+    </body>
+    <script type="text/javascript" src="/Users/pepe/Desktop/Programming/SemesterPlanning/public/js/step3.js"></script>
+</html>
