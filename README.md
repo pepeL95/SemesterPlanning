@@ -1,7 +1,5 @@
 # SemesterPlanning
-This application allows students to input their previously taken courses, and returns a set of available courses (according to 
-prerequisites that were already checked). It will display an optimal list by priorityzing a given criteria specified by the 
-user (i.e gradution time) => (this feature has not been implemented yet)
+This application allows students to input their previously taken courses, and returns a set of available courses (according to prerequisites that were already checked). It will display an optimal list by priorityzing a given criteria specified by the user (i.e gradution time). I used a graph to represent the hierarchy of courses, and to determine the best path traversal towards graduation.
 
 # This is a sample view of the application thus far (still in progress...)
 ![Screen Shot 2022-04-27 at 11 46 08 AM](https://user-images.githubusercontent.com/98781642/165558899-1b1e1943-7e5a-4b34-82b2-5093519af83c.png)
